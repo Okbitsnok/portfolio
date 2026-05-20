@@ -1,6 +1,7 @@
 # Dmitry Kontsybko — Frontend Developer Portfolio
 
-![Portfolio Preview](preview.png)
+![Portfolio Preview](portfolio/preview.png)
+
 
 🌐 **Live demo:** https://kontsybko-web-portfolio.netlify.app/
 
