@@ -1,0 +1,91 @@
+/* CURSOR */
+.cursor {
+  position: fixed;
+  width: 8px; height: 8px;
+  background: var(--accent);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%,-50%);
+  mix-blend-mode: normal;
+  transition: width .25s, height .25s, background .25s;
+}
+.cursor-ring {
+  position: fixed;
+  width: 32px; height: 32px;
+  border: 1px solid rgba(167,139,250,0.4);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9998;
+  transform: translate(-50%,-50%);
+  transition: width .3s, height .3s, opacity .3s;
+}
+body:has(a:hover) .cursor,
+body:has(button:hover) .cursor { width: 16px; height: 16px; background: var(--accent2); }
+body:has(a:hover) .cursor-ring,
+body:has(button:hover) .cursor-ring { width: 52px; height: 52px; opacity: .3; }
+
+/* NOISE */
+body::after {
+  content:'';
+  position:fixed;
+  inset:0;
+  background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  opacity:.018;
+  pointer-events:none;
+  z-index:1000;
+}
+
+/* NAV */
+nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 52px;
+  background: linear-gradient(to bottom, rgba(15,14,23,0.95) 0%, transparent 100%);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255,255,255,0.03);
+}
+.nav-logo {
+  font-family: var(--font-display);
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: var(--text);
+  text-decoration: none;
+}
+.nav-logo span { color: var(--accent); }
+.nav-links { display: flex; gap: 32px; list-style: none; }
+.nav-links a {
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--muted);
+  text-decoration: none;
+  transition: color .3s;
+  font-weight: 400;
+}
+.nav-links a:hover { color: var(--text); }
+.nav-cta {
+  font-size: 12px;
+  font-family: var(--font-body);
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: var(--bg);
+  background: var(--accent);
+  border: none;
+  padding: 10px 24px;
+  border-radius: 100px;
+  cursor: none;
+  transition: background .3s, transform .2s, box-shadow .3s;
+  box-shadow: 0 0 20px rgba(167,139,250,0.25);
+}
+.nav-cta:hover {
+  background: #c4b5fd;
+  box-shadow: 0 0 32px rgba(167,139,250,0.45);
+  transform: translateY(-1px);
+}
+

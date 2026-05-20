@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dmitry Kontsybko — Frontend Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@300;400&display=swap" rel="stylesheet">
+
+<!-- Styles -->
+<link rel="stylesheet" href="css/variables.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/nav.css">
+<link rel="stylesheet" href="css/hero.css">
+<link rel="stylesheet" href="css/sections.css">
+<link rel="stylesheet" href="css/animations.css">
+</head>
+</head>
+<body>
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<canvas id="particles-canvas"></canvas>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="nav-logo">Kontsybko<span>.</span></a>
+  <ul class="nav-links">
+    <li><a href="#work">Work</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <button class="nav-cta">Available for hire</button>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+    <div class="hero-grid"></div>
+  </div>
+  <div class="hero-content">
+    <!-- LEFT -->
+    <div class="hero-left">
+      <div class="hero-availability">
+        <div class="avail-dot"></div>
+        <span class="avail-text">Available for new projects</span>
+      </div>
+      <h1 class="hero-title">
+        <span class="line"><span class="word">Crafting</span></span>
+        <span class="line"><span class="word grad">Digital</span></span>
+        <span class="line"><span class="word outline">Artworks</span></span>
+      </h1>
+      <p class="hero-desc">
+        Frontend developer & UI designer turning complex ideas into elegant, high-performance web experiences that people actually love.
+      </p>
+      <div class="hero-actions">
+        <a href="#work" class="btn-primary">View My Work</a>
+        <a href="#contact" class="btn-ghost">Let's talk →</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <div class="stat-num">4<span>+</span></div>
+          <div class="stat-label">Years exp.</div>
+        </div>
+        <div class="stat-div"></div>
+        <div class="stat-item">
+          <div class="stat-num">38<span>+</span></div>
+          <div class="stat-label">Projects</div>
+        </div>
+        <div class="stat-div"></div>
+        <div class="stat-item">
+          <div class="stat-num">100<span>%</span></div>
+          <div class="stat-label">Satisfaction</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="hero-right">
+      <div class="hero-orb"></div>
+
+      <!-- Floating stars -->
+      <div class="star" style="width:3px;height:3px;top:60px;left:20px;animation-delay:0s"></div>
+      <div class="star" style="width:2px;height:2px;top:160px;right:20px;animation-delay:.8s"></div>
+      <div class="star" style="width:4px;height:4px;bottom:100px;left:30px;animation-delay:1.4s"></div>
+      <div class="star" style="width:2px;height:2px;top:80px;right:80px;animation-delay:.4s"></div>
+
+      <!-- Main code card -->
+      <div class="hero-card">
+        <div class="card-topbar">
+          <div class="dot dot-r"></div>
+          <div class="dot dot-y"></div>
+          <div class="dot dot-g"></div>
+          <div class="card-title-bar">portfolio.js</div>
+        </div>
+        <div class="card-code">
+          <div class="cl"><span class="ln">1</span><span class="cm">// frontend developer</span></div>
+          <div class="cl"><span class="ln">2</span>&nbsp;</div>
+          <div class="cl"><span class="ln">3</span><span class="kw">const</span> <span class="va">me</span> <span class="pu">=</span> <span class="pu">{</span></div>
+          <div class="cl"><span class="ln">4</span>&nbsp;&nbsp;<span class="pr">name</span><span class="pu">:</span> <span class="str">'Dmitry Kontsybko'</span><span class="pu">,</span></div>
+          <div class="cl"><span class="ln">5</span>&nbsp;&nbsp;<span class="pr">role</span><span class="pu">:</span> <span class="str">'Frontend Dev'</span><span class="pu">,</span></div>
+          <div class="cl"><span class="ln">6</span>&nbsp;&nbsp;<span class="pr">stack</span><span class="pu">:</span> <span class="pu">[</span><span class="str">'React'</span><span class="pu">,</span> <span class="str">'Next'</span><span class="pu">,</span> <span class="str">'TS'</span><span class="pu">],</span></div>
+          <div class="cl"><span class="ln">7</span>&nbsp;&nbsp;<span class="pr">loves</span><span class="pu">:</span> <span class="str">'pixel-perfect UI'</span><span class="pu">,</span></div>
+          <div class="cl"><span class="ln">8</span>&nbsp;&nbsp;<span class="pr">coffee</span><span class="pu">:</span> <span class="num">Infinity</span></div>
+          <div class="cl"><span class="ln">9</span><span class="pu">}</span></div>
+          <div class="cl"><span class="ln">10</span>&nbsp;</div>
+          <div class="cl"><span class="ln">11</span><span class="fn">export default</span> <span class="va">me</span><span class="type-cursor"></span></div>
+        </div>
+        <div class="card-metrics">
+          <div class="metric">
+            <div class="metric-val green">99</div>
+            <div class="metric-lbl">Perf.</div>
+          </div>
+          <div class="metric">
+            <div class="metric-val">38+</div>
+            <div class="metric-lbl">Projects</div>
+          </div>
+          <div class="metric">
+            <div class="metric-val orange">4yr</div>
+            <div class="metric-lbl">Exp.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Floating badges -->
+      <div class="badge badge-1">
+        <div class="badge-icon">⚡</div>
+        <div class="badge-text">Fast builds</div>
+        <div class="badge-sub">VITE + TURBOPACK</div>
+      </div>
+      <div class="badge badge-2">
+        <div class="badge-icon">🎨</div>
+        <div class="badge-text">UI Design</div>
+        <div class="badge-sub">FIGMA → CODE</div>
+      </div>
+      <div class="badge badge-3">
+        <div class="badge-icon">✨</div>
+        <div class="badge-text">Animations</div>
+        <div class="badge-sub">GSAP · MOTION</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee-wrap">
+  <div class="marquee-track">
+    <div class="marquee-item"><span class="marquee-dot"></span>React</div>
+    <div class="marquee-item"><span class="marquee-dot"></span>Next.js</div>
+    <div class="marquee-item"><span class="marquee-dot"></span>TypeScript</div>
+    <div class="marquee-item"><span class="marquee-dot"></span>Three.js</div>
+    <div class="marquee-item"><span class="marquee-dot"></span>GSAP</div>
+    <div class="marquee-item"><span class="marquee-dot"></span>Tailwind CSS</div>
+    <div class="marquee-item"><span class="marquee-dot"></span>Framer Motion</div>
+    <div class="marquee-item"><span class="marquee-dot"></span>WebGL</div>
+    <div class="marquee-item"><span class="marquee-dot"></span>Figma</div>
+    <div class="marquee-item"><span class="marquee-dot"></span>Node.js</div>
+    <div class="marquee-item"><span class="marquee-dot"></span>React</div>
+    <div class="marquee-item"><span class="marquee-dot"></span>Next.js</div>
+    <div class="marquee-item"><span class="marquee-dot"></span>TypeScript</div>
+    <div class="marquee-item"><span class="marquee-dot"></span>Three.js</div>
+    <div class="marquee-item"><span class="marquee-dot"></span>GSAP</div>
+    <div class="marquee-item"><span class="marquee-dot"></span>Tailwind CSS</div>
+    <div class="marquee-item"><span class="marquee-dot"></span>Framer Motion</div>
+    <div class="marquee-item"><span class="marquee-dot"></span>WebGL</div>
+    <div class="marquee-item"><span class="marquee-dot"></span>Figma</div>
+    <div class="marquee-item"><span class="marquee-dot"></span>Node.js</div>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div>
+    <p class="section-label reveal">About me</p>
+    <h2 class="section-title reveal reveal-delay-1">Beyond<br>the <span class="grad">Code</span></h2>
+    <p class="about-text reveal reveal-delay-2">I'm a frontend developer obsessed with the intersection of <strong>design and engineering</strong>. I believe great UI is invisible — users don't notice it, they just feel it.</p>
+    <p class="about-text reveal reveal-delay-2">From pixel-perfect layouts to <strong>performant animations</strong>, I craft experiences that leave an impression.</p>
+    <div class="skills-grid reveal reveal-delay-3">
+      <div class="skill-item">React / Next.js</div>
+      <div class="skill-item">TypeScript</div>
+      <div class="skill-item">GSAP</div>
+      <div class="skill-item">Three.js</div>
+      <div class="skill-item">Tailwind CSS</div>
+      <div class="skill-item">Figma</div>
+      <div class="skill-item">Node.js</div>
+      <div class="skill-item">WebGL</div>
+      <div class="skill-item">Framer</div>
+    </div>
+  </div>
+  <div class="about-visual reveal reveal-delay-1">
+    <div class="about-card">
+      <div class="about-avatar">DK</div>
+      <div class="about-name">Dmitry Kontsybko</div>
+      <div class="about-role">Frontend Developer & UI Designer</div>
+      <div class="about-bars">
+        <div class="bar-row">
+          <div class="bar-label"><span>React / Next.js</span><span>95%</span></div>
+          <div class="bar-track"><div class="bar-fill" style="width:95%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>UI / Design</span><span>90%</span></div>
+          <div class="bar-track"><div class="bar-fill" style="width:90%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>Animations</span><span>88%</span></div>
+          <div class="bar-track"><div class="bar-fill" style="width:88%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>Three.js / WebGL</span><span>72%</span></div>
+          <div class="bar-track"><div class="bar-fill" style="width:72%"></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="divider"></div>
+
+<!-- WORK -->
+<section class="work" id="work">
+  <div class="work-header">
+    <div>
+      <p class="section-label reveal">Selected work</p>
+      <h2 class="section-title reveal reveal-delay-1">Projects</h2>
+    </div>
+    <a href="#" class="work-link reveal">All projects →</a>
+  </div>
+  <div class="projects-grid">
+    <div class="project-card reveal">
+      <div class="project-img"><div class="project-thumb t1"><div class="thumb-inner"><div class="thumb-label">E-COMM</div><div class="thumb-chip">Featured</div></div></div></div>
+      <div class="project-info">
+        <div class="project-meta"><div class="project-num">01</div><div class="project-name">LuxeStore Platform</div><div class="project-tech">Next.js · TypeScript · Stripe</div></div>
+        <div class="project-arrow">↗</div>
+      </div>
+    </div>
+    <div class="project-card reveal reveal-delay-1">
+      <div class="project-img"><div class="project-thumb t2"><div class="thumb-inner"><div class="thumb-label">SaaS</div></div></div></div>
+      <div class="project-info">
+        <div class="project-meta"><div class="project-num">02</div><div class="project-name">Analytiq Dashboard</div><div class="project-tech">React · D3.js · Tailwind</div></div>
+        <div class="project-arrow">↗</div>
+      </div>
+    </div>
+    <div class="project-card reveal reveal-delay-1">
+      <div class="project-img"><div class="project-thumb t3"><div class="thumb-inner"><div class="thumb-label">3D</div></div></div></div>
+      <div class="project-info">
+        <div class="project-meta"><div class="project-num">03</div><div class="project-name">Cosmos Landing</div><div class="project-tech">Three.js · GSAP · WebGL</div></div>
+        <div class="project-arrow">↗</div>
+      </div>
+    </div>
+    <div class="project-card reveal reveal-delay-2">
+      <div class="project-img"><div class="project-thumb t4"><div class="thumb-inner"><div class="thumb-label">APP</div></div></div></div>
+      <div class="project-info">
+        <div class="project-meta"><div class="project-num">04</div><div class="project-name">TaskFlow App</div><div class="project-tech">React · Zustand · Motion</div></div>
+        <div class="project-arrow">↗</div>
+      </div>
+    </div>
+    <div class="project-card reveal reveal-delay-2">
+      <div class="project-img"><div class="project-thumb t5"><div class="thumb-inner"><div class="thumb-label">WEB</div></div></div></div>
+      <div class="project-info">
+        <div class="project-meta"><div class="project-num">05</div><div class="project-name">GreenLife Agency</div><div class="project-tech">Next.js · GSAP · Sanity</div></div>
+        <div class="project-arrow">↗</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+  <div class="work-header">
+    <div>
+      <p class="section-label reveal">What I do</p>
+      <h2 class="section-title reveal reveal-delay-1">Services</h2>
+    </div>
+  </div>
+  <div class="services-grid">
+    <div class="service-card reveal">
+      <div class="service-icon">🖥️</div>
+      <div class="service-num">01</div>
+      <div class="service-title">UI Development</div>
+      <div class="service-desc">Pixel-perfect implementation of complex interfaces with obsessive attention to detail.</div>
+      <ul class="service-list"><li>Component architecture</li><li>Responsive design</li><li>Cross-browser support</li><li>Performance optimization</li></ul>
+    </div>
+    <div class="service-card reveal reveal-delay-1">
+      <div class="service-icon">✨</div>
+      <div class="service-num">02</div>
+      <div class="service-title">Motion Design</div>
+      <div class="service-desc">Purposeful animations that guide users and make interfaces feel alive.</div>
+      <ul class="service-list"><li>Page transitions</li><li>Scroll animations</li><li>Micro-interactions</li><li>GSAP / Framer Motion</li></ul>
+    </div>
+    <div class="service-card reveal reveal-delay-2">
+      <div class="service-icon">🚀</div>
+      <div class="service-num">03</div>
+      <div class="service-title">Full-Stack Apps</div>
+      <div class="service-desc">End-to-end web applications built with modern tooling and scalable architecture.</div>
+      <ul class="service-list"><li>Next.js / React</li><li>API integration</li><li>Database design</li><li>Deployment & CI/CD</li></ul>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="contact-inner">
+    <div>
+      <p class="section-label reveal">Get in touch</p>
+      <h2 class="contact-title reveal reveal-delay-1">Let's<br><span class="grad">Build</span><br>Together</h2>
+      <p class="contact-sub reveal reveal-delay-2">Open to freelance projects, full-time roles, and collaborations. Let's create something remarkable.</p>
+    </div>
+    <form class="contact-form reveal">
+      <div class="form-field"><label class="form-label">Your name</label><input class="form-input" type="text" placeholder="John Doe"></div>
+      <div class="form-field"><label class="form-label">Email address</label><input class="form-input" type="email" placeholder="hello@example.com"></div>
+      <div class="form-field"><label class="form-label">Message</label><textarea class="form-textarea" placeholder="Tell me about your project..."></textarea></div>
+      <button type="submit" class="form-submit">Send Message →</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-copy">© 2025 Dmitry Kontsybko</div>
+  <div class="footer-socials"><a href="#">GitHub</a><a href="#">LinkedIn</a><a href="#">Twitter</a><a href="#">Dribbble</a></div>
+  <a href="#" class="footer-back">Back to top ↑</a>
+</footer>
+
+
+<!-- Scripts -->
+<script src="js/cursor.js"></script>
+<script src="js/particles.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
