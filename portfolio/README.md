@@ -1,5 +1,9 @@
 # Dmitry Kontsybko — Frontend Developer Portfolio
 
+![Portfolio Preview](preview.png)
+
+🌐 **Live demo:** https://kontsybko-web-portfolio.netlify.app/
+
 A modern, animated portfolio website built with pure HTML, CSS, and JavaScript.
 
 ## ✨ Features
